@@ -12,7 +12,7 @@ def check_going_down(my_list):
         False if they don't"""
 
     #if there's only 2 numbers left, just compare them
-    if len(my_list) == 2:
+    if len(my_list) == 1:
         if my_list[0] > my_list[1]:
             return True
         else:
