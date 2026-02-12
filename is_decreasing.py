@@ -11,12 +11,9 @@ def is_decreasing(my_list):
         Each number has to be less than the one before it.Returns True if they keep going down,
         False if they don't"""
 
-    #if there's only 2 numbers left, just compare them
-    if len(my_list) == 1:
-        if my_list[0] > my_list[1]:
-            return True
-        else:
-            return False
+    #if there's only 2 numbers left, compare them
+    if len(my_list) <= 1:
+        return True
 
     #check if the first number is bigger than the second number
     if my_list[0] > my_list[1]:
