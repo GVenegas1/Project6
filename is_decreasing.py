@@ -26,7 +26,3 @@ def check_going_down(my_list):
         #first number isn't bigger so the list isn't decreasing
         return False
 
-# test it out here
-print(check_going_down([10, 8, 5, 2]))  # should print True
-print(check_going_down([10, 8, 8, 2]))  # should print False
-print(check_going_down([5, 3]))  # should print True
