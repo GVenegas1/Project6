@@ -6,7 +6,7 @@
 #is smaller than or equal to the one after it,you return False.
 
 
-def check_going_down(my_list):
+def is_decreasing(my_list):
     """This function checks if numbers in a list keep getting smaller.
         Each number has to be less than the one before it.Returns True if they keep going down,
         False if they don't"""
@@ -21,7 +21,7 @@ def check_going_down(my_list):
     #check if the first number is bigger than the second number
     if my_list[0] > my_list[1]:
         #now check the rest of the list without the first number
-        return check_going_down(my_list[1:])
+        return is_decreasing(my_list[1:])
     else:
         #first number isn't bigger so the list isn't decreasing
         return False
